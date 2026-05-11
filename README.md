@@ -1,133 +1,70 @@
-# Invoice & Expense Tracker
+# Getting Started with Create React App
 
-## Project Overview
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The Invoice & Expense Tracker is a full-stack financial management application designed to help users:
+## Available Scripts
 
-- Create and manage invoices with multiple line items
-- Track payments (Paid / Pending status)
-- Monitor income, expenses, and profit via a live dashboard
-- Log and manage business expenses
-- Generate downloadable professional PDF invoices
-- Delete and manage invoice records
-- View real-time financial insights using charts
+In the project directory, you can run:
 
-This project simulates a real-world invoicing system similar to tools like QuickBooks or Xero.
+### `npm start`
 
-## Features
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-1. Invoice Management
-Create invoices with dynamic line items (description, quantity, price)
-Auto-calculated totals per invoice
-Track invoice status (Pending / Paid)
-Delete invoices when no longer needed
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-2. Payments System
-Mark invoices as Paid
-Select payment method (Cash / EFT / Cheque)
-Automatically updates invoice status
-Stores payment history
+### `npm test`
 
-3. Financial Dashboard
-Total Income (Paid invoices)
-Total Expenses
-Profit calculation
-Outstanding invoices tracking
-Visual charts using Recharts
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-4. PDF Invoice Generator
-Download professional invoices as PDF
-Includes:
-Company details
-Client information
-Itemized invoice table
-VAT calculation (15%)
-Subtotal & Grand total
-Paid watermark
+### `npm run build`
 
-5. Expense Tracking
-Log business expenses
-Track spending vs income
-Included in profit calculations
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Modern UI/UX
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
--Clean SaaS-style dashboard layout
--Responsive design (mobile-friendly)
--Card-based UI system
--Status badges (Paid / Pending / Overdue)
--Interactive buttons and hover effects
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Tech Stack
+### `npm run eject`
 
--Frontend
--React.js
--Recharts (data visualization)
--Tailwind CSS (UI styling)
--Backend
--Node.js
--Express.js
--Database
--SQLite
--jsPDF (PDF generation)
--REST API architecture
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Installation
-1. Clone the repository
-git clone git@github.com:PreciousVilane/Invoice-Expense-Tracker.git
-cd invoice-tracker
-2. Install backend dependencies
-npm install
-3. Start backend server
-npm start
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Server runs on:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-http://localhost:5000
-4. Start frontend
-cd client
-npm install
-npm start
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Frontend runs on:
+## Learn More
 
-http://localhost:3000
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## API Endpoints
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-1. Invoices
-GET /api/invoices — Get all invoices
-POST /api/invoices — Create invoice
-DELETE /api/invoices/:id — Delete invoice
-2. Payments
-POST /api/payments — Record payment
-GET /api/payments/:invoice_id — Get payment history
-3. Dashboard
-GET /api/dashboard — Financial summary
-4. Example Dashboard Response
-{
-  "income": 12500,
-  "expenses": 3200,
-  "profit": 9300,
-  "outstanding": 3
-}
+### Code Splitting
 
-   ## Key Learnings
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-  This project demonstrates:
-  
-  -Full-stack CRUD application development
-  -REST API design and integration
-  -Database relationships (invoices, items, payments)
-  -Financial calculations and business logic
-  -PDF generation from frontend
-  -Professional UI/UX design principles
-  -Real-world SaaS-style architecture
+### Analyzing the Bundle Size
 
-📄 License
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-This project is open-source and available under the MIT License.
+### Making a Progressive Web App
 
-🙌 Author
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Built as a full-stack portfolio project to demonstrate real-world software development skills in invoicing, finance systems, and business logic applications.
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
