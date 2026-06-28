@@ -1,3 +1,3 @@
-## Study tracker
+## Invoice-Expense-Tracker
 
 
